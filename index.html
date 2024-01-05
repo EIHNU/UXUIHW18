@@ -3,43 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/UXUIHW18/CSS/style.css"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <title>eh...</title>
 </head>
 <body>
-    <header class="navigation">
-        <div class="inline-block logo">
-        <img src="images\logoplaceholder.png">
-        <nav class="inline-block">
+    <header>
+    <div class="navigation">
+    <div class="inline-block logo">
+        <a href="index.html"><img src="images/100x100_logo.png" style="width:100px;height:100px"></a>
+        <nav>
             <ul>
-                <li class="inline-block">About Me</li>
-                <li class="inline-block">Skills</li>
-                <li class="inline-block">My Work</li>
-                <li class="inline-block">Contact Me</li>
+                <!--The second class tags are currently unused but allows for more designing/individuation for future use-->
+                <li class="inline-block navAbout"><a href="#">About Me</a></li>
+                <li class="inline-block navSkill"><a href="#">Skills</a></li>
+                <li class="inline-block navWork"><a href="#">My Work</a></li>
+                <li class="inline-block navContact"><a href="#">Contact Me</a></li>
             </ul>
         </nav>
-        </div>
+    </div>
 </header>
-<!-- Hero Img section--> 
-<section class="heroimg">
+<!-- Hero Image section--> 
+<section class="heroContainer">
+    <div class="heroimg">
+        <img src="images/headshotplaceholder.png" style="height:300px;width:300px;"></div>
     <div class="content">
-        <img src="images/headshotplaceholder.png">
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        </p>
+        <p>"I create art that is pleasing and resonant. I design user interfaces that are intuitive and friendly. I make all sorts of other stuff, in a lot of other mediums. Lets make some stuff together. </p>
         <button> Download Resume
-        </button>
+                 </button>
     </div>
 </section>
+<!--Skills Section, coded with css flex-->
+<section class="myskills">
+    <h1>My skills</h1>
+    <div class="flexContainer">
+        <div class="flexItem">
+            <img src="images/">
+            <h3>Visual Design</h3>
+            <p>Strategic Implementation of images, colors and fonts to help develop the look and feel of the product, creating interfaces that provide optimal experiences.
+            </p>
+        </div>
+        <div class="flexItem">
+            <img src="images/">
+            <h3>Collaboration</h3>
+            <p>Working well with others, achiving common goals and building relationships on the team. Creating a work environement that is inclusive and respectful.
+            </p>
+        </div>
+        <div class="flexItem">
+            <img src="images/">
+            <h3>Creativity</h3>
+            <p>Developing new ideas, increasing efficieny and devising new and innovative ways to solve problems. Problem solving and interesting approaches. Making observations and being curious.
+            </p>
+        </div>
+        <div class="flexItem">
+            <img src="images/">
+            <h3>Slaying</h3>
+            <p>Looking cool and doing all of the above with as much swag as possible, and cooking with gas when i do it. </p>
+        </div>
+        <div class="flexItem">
+            <img src="images/">
+            <h3>Another skill</h3>
+            <p>Who has this many skills? I certainly dont. </p>
+        </div>
+    </div>
+    </section>
 <!--My Work Section-->
+<section class="mywork">
+    <h1>My Work</h1>
+        <div class="workgrid">
+            <div class="item1 cover">
+                <img src="images/talllogoplacegolder.png">
+            </div>
+            <div class="item1 copy">
+                <h4>Chiquita Banana</h4>
+                <p>solving racism with bananas</p>
+                <button> View Project</button>
+            </div>
+            <div>
+                <img src="images/talllogoplacegolder.png">
+            </div>
+            <div>
+                <h4></h4>
+                <p></p>
+                <button>View Project</button>
+            </div>
+        </div>
+        <h3>View all Projects</h3>
+</section>
 <!--About Section-->
+
 <!--Contact Section-->
+
 <!--Footer-->
 <footer>
     <ul>
-        <li class="inline-block">About Me</li>
-        <li class="inline-block">Skills</li>
-        <li class="inline-block">My Work</li>
-        <li class="inline-block">Contact Me</li>
+        <li class="inline-block footAbout"><a href="">About Me</a></li>
+        <li class="inline-block footSkill"><a href="">Skills</a></li>
+        <li class="inline-block footWork"><a href="">My Work</a></li>
+        <li class="inline-block footContact"><a href="">Contact Me</a></li>
     </ul>
 </footer>     
 </body>
-</html>DOCTYPE HTML:UTF-8
+</html>

@@ -1,41 +1,141 @@
+body{
+    padding:0;
+    margin:0;
+}
+/*Navigation*/
+.navigation {
+    height: 15vh;
+    border-bottom: solid grey;
+}
 .inline-block {
+    padding:1%;
     display:inline-flex;
-    vertical-align:top;
-    width:100%;
+    text-align:center;
+    width:70%;
+}
+.inline-block.logo {
+    padding:1%;
+    width:97%;
 }
 .logo {
-    width:23%;
-    padding:1%;
+    position:absolute;
+    margin-left:50px;
 }
-
-
 nav {
+    display:flex;
     width:100%;
-    padding:1%;
+    height:10vh;
+    padding: 0.5em;
 }
 nav ul {
-    width:50%;
-    margin-left:auto;
+    display:flex;
+    width:35vw;
+    margin-left:53%;
+    position:relative;
+}
+nav li {
+    padding:2px;
+    height:auto;
+    justify-content:center;
+    align-items:center;
+    text-decoration: none;
+}
+
+nav li a{
+    text-decoration: none;
+}
+
+nav li a:visited {
+    text-decoration: none;
+    color: black;
+}
+nav li:hover {
+    background-color: rgb(165, 228, 105);
+}
+nav li:active{
+    background-color: blueviolet;
+}
+/*Hero Section*/
+.heroContainer{
+    display:flex;
+    padding: 33px;
 }
 .heroimg {
-    height: auto;
-    Width:auto;
+    height:auto;
+    width:auto;
     padding:25px;
+    flex-direction:row-reverse;
+    justify-content:space-around;
 }
 .content {
-    width:500px;
-    margin: 0 auto;
+    width:auto;
+    margin:15px;
+    padding: 20px;
 }
+
+/*Skills Section*/
+.myskills h1{
+    padding:50px;
+}
+
+.flexContainer {
+    display:flex;
+    flex-flow:row wrap;
+    margin:auto;
+    padding:1%;
+    justify-content:space-around;
+    align-items:stretch;
+    align-content:space-around;
+    gap:25px;
+}
+
+.flexItem {
+    padding:10px;
+    width:20%;
+    margin:auto
+}
+
+/*My Work*/
+.mywork{
+    padding:50px;
+    margin:0 auto;
+}
+
+.mywork h1 {
+padding:5px;
+margin:auto;
+}
+
+.workgrid{
+display:grid;
+}
+
+/*Footer*/
 footer {
     background-color:#373738;
-    padding: 1%;
+    padding: 1px;
+    overflow:hidden;
 }
 footer ul {
     padding-left:5%;
     display:inline-flex;
     vertical-align:top;
-    width:100%
+    width: 33%;
 }
 footer li {
     padding: 2px;
+}
+footer li a{
+    text-decoration: none;
+}
+footer li:hover{
+    background-color:greenyellow;
+}
+
+/*Mobile responsive*/
+@media only screen and (max-width:600px){
+    .flexContainer{
+        flex-direction:column;
+    }
+
 }
