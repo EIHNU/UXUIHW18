@@ -117,9 +117,10 @@ grid-template-rows: auto auto auto;
 gap:25px 15px;
 padding:2%; 
 align-content: center;
+overflow:hidden;
 }
 .workgrid> div {
-    background-color:blanchedalmond;
+    background-color:lightgrey;
     border-radius: 3%;
     text-align: center;
 }
@@ -130,10 +131,10 @@ height:auto;
 border-radius:5%;
 }
 .workgrid h3{
-    color: aquamarine;
+    color: black;
 }
 .workgrid p{
-    color:green;
+    color:black;
 }
 .workgrid button{
     margin:16px;
@@ -148,15 +149,16 @@ border-radius:5%;
     flex-direction:column;
     margin:1%;
     padding:15px;
-    background-color: #8c66b3;
+    
 }
  
 .contact form{
     margin: 2%;
-    padding: 10px;
-    background-color: aquamarine;
+    padding: 20px;
+    background-color: lightgray;
     width:50%;
     height:auto;
+    border-radius: 3%;
 }
 
 input[type=text]{
@@ -168,6 +170,9 @@ input[type=email]{
     width:90%;
     margin:10px;
     padding:10px;
+}
+.contact label{
+    padding:1%;
 }
 
 select{
@@ -181,7 +186,7 @@ textarea{
     margin:10px;
     padding:5px;
     box-sizing:border-box;
-    border:2px solid greenyellow;
+    border:2px solid black;
     border-radius:3px;
     resize:vertical
 }
@@ -375,7 +380,7 @@ margin:15px;
 .contact form{
     margin: 2%;
     padding: 1%;
-    background-color: aquamarine;
+    background-color: grey;
     width:93%;
     height:100%;
 }
