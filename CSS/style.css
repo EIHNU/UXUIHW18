@@ -144,12 +144,14 @@ border-radius:5%;
 }
 
 /*Contact form*/
+.contact h1{
+    margin: 50px;
+}
 .contact{
     display:flex;
     flex-direction:column;
     margin:1%;
     padding:15px;
-    
 }
  
 .contact form{
